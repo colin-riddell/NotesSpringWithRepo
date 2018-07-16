@@ -27,3 +27,12 @@ This shows it's possible to use Spring-Boot with Hibernate and use Springs built
     }
     
 ```
+
+To create custom queries using `criteria` and still extend `JpaRepository` then the folling must be done:
+ 
+ * Create a Repository interface (as normal) for the model. Eg `NoteRepository` for the model `Note`. Extend `JpaRepository` (as normal, too)
+ * For CRUD, this doesn't need to be populated with metod signitures - but for custom queries, read on
+ * Add method signiture for custom query
+ * Create second interface `NoteRepositoryCustom` which defines the same method sig'.
+ * Add class `NoteRepositoryImpl` which implements the Custom interface just created.
+ * Do the above in the Impl.
