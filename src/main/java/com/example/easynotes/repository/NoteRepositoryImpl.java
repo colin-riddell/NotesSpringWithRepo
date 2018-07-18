@@ -14,7 +14,7 @@ import java.util.List;
 
 public class NoteRepositoryImpl implements NoteRepositoryCustom {
 
-    /* Get the entity manager from */
+    /* Get entity manager from spring via injection */
     @Autowired
     EntityManager entityManager;
 
