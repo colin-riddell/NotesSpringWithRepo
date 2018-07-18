@@ -21,7 +21,7 @@ public class NoteViewController {
     @GetMapping("/note")
     public String renderNote(Model model) {
         ArrayList<Note> foundNotesByTitle =  (ArrayList<Note>) noteRepository.noteByTitle("1234a");
-
+        // Now add model attributes to view
         model.addAttribute("title", foundNotesByTitle.get(0).getTitle());
         model.addAttribute("content", foundNotesByTitle.get(0).getContent());
         return "note";
