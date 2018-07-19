@@ -1,3 +1,11 @@
 language: java
-script:
-mvn verify
+jdk: oraclejdk8
+install: true
+script: ./mvnw clean install
+script: ./mvnw test -B
+
+
+services:
+  - postgresql
+before_script:
+  - psql -c 'create database notes_app;' -U postgres
