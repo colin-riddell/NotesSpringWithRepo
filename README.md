@@ -1,5 +1,5 @@
 
-https://travis-ci.org/colin-riddell/NotesSpringWithRepo.svg?branch=master
+[![Build Status](https://travis-ci.org/colin-riddell/NotesSpringWithRepo.svg?branch=master)](https://travis-ci.org/colin-riddell/NotesSpringWithRepo)
 
 # Demo Notes App Spring + Hibernate Repository
 
