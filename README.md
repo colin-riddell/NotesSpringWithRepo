@@ -1,3 +1,6 @@
+
+https://travis-ci.org/colin-riddell/NotesSpringWithRepo.svg?branch=master
+
 # Demo Notes App Spring + Hibernate Repository
 
 This shows it's possible to use Spring-Boot with Hibernate and use Springs built in `JpaRepository` for all CRUD and create custom Criteria Queries using EntityManager to get hold of the `session` in order to make use of `Criteria`. See `NotRepositoryImpl.java`
